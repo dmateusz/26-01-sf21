@@ -1,1 +1,3 @@
 composer update doctrine/doctrine-fixtures-bundle
+
+git clone -b 2.1-startup git@github.com:gajdaw/symfony-standard.git .
