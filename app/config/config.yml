@@ -19,7 +19,6 @@ framework:
 
     session:
         default_locale: pl
-        auto_start:     true
 
 # Twig Configuration
 twig:
