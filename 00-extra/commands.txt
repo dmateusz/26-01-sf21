@@ -1,3 +1,44 @@
-composer update doctrine/doctrine-fixtures-bundle
+How to start?
+=============
 
-git clone -b 2.1-startup git@github.com:gajdaw/symfony-standard.git .
+1. Clone and create master branch
+
+    git clone -b 2.1-startup git@github.com:gajdaw/symfony-standard.git .
+    git checkout -b master
+
+
+2. Add remote for project
+
+    git remote add private git@github.com:gajdaw/project-alpha.git
+
+3. Update vendor libraries
+
+    composer install
+
+4. Update embeded 2.1-startup distribution.
+   Try it in a tmp branch:
+
+   1. Update original 2.1-startup distribution
+   2. Create tmp branch
+
+       git checkout -b tmp master
+
+   3. Update embeded 2.1-startup branch
+
+       git checkout 2.1-startup
+       git pull origin 2.1-startup
+
+   4. Merge changes:
+       git checkout tmp
+       git merge 2.1-startup
+
+
+    Resolve conflicts. If everything is fine merge tmp branch
+    into the master branch:
+
+        git checkout master
+        git merge tmp
+
+
+
+
