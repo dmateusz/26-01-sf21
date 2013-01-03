@@ -1,3 +1,10 @@
+Updating packages
+=================
+
+composer install
+composer update doctrine/doctrine-fixtures-bundle
+composer update stof/doctrine-extensions-bundle
+
 How to start?
 =============
 
@@ -5,7 +12,6 @@ How to start?
 
     git clone -b 2.1-startup git@github.com:gajdaw/symfony-standard.git .
     git checkout -b master
-
 
 2. Add remote for project
 
@@ -32,13 +38,10 @@ How to start?
        git checkout tmp
        git merge 2.1-startup
 
-
     Resolve conflicts. If everything is fine merge tmp branch
     into the master branch:
 
         git checkout master
         git merge tmp
-
-
 
 
