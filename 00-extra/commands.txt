@@ -10,7 +10,7 @@ How to start?
 
 1. Clone and create master branch
 
-    git clone -b 2.1-startup git@github.com:gajdaw/symfony-standard.git .
+    git clone -b 2.1-startup-dev git@github.com:gajdaw/symfony-standard.git .
     git checkout -b master
 
 2. Add remote for project
