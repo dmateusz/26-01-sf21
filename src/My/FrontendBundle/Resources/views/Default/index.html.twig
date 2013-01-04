@@ -1,1 +1,18 @@
-Hello {{ name }}!
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>ala</title>
+</head>
+<body>
+
+<ul id="menu">
+    {% for entity in entities %}
+        <li>
+                {{ entity }}
+        </li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

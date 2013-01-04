@@ -8,12 +8,16 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
 class DefaultController extends Controller
 {
+
     /**
-     * @Route("/hello/{name}")
+     * @Route("/", name="homepage")
      * @Template()
      */
-    public function indexAction($name)
+    public function indexAction()
     {
-        return array('name' => $name);
+        $em = $this->getDoctrine()->getEntityManager();
+        $entities = $em->getRepository('MyFrontendBundle:Song')->findAll();
+        return array('entities' => $entities);
     }
+
 }
