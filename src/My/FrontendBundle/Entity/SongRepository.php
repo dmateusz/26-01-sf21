@@ -12,4 +12,16 @@ use Doctrine\ORM\EntityRepository;
  */
 class SongRepository extends EntityRepository
 {
+
+
+    /**
+     * Finds all entities in the repository.
+     *
+     * @return array The entities.
+     */
+    public function findAll()
+    {
+        return $this->findBy(array(), array('title' => 'ASC'));
+    }
+
 }
