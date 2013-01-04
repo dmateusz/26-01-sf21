@@ -91,4 +91,28 @@ class Song
     {
         return $this->contents;
     }
+
+    /**
+     * Sets properties using array
+     *
+     * @param array $data
+     */
+    public function fromArray(array $data)
+    {
+        foreach ($data as $key => $value) {
+            $methodName = 'set' . ucfirst($key);
+            $this->$methodName($value);
+        }
+    }
+
+    /**
+     * Get title
+     *
+     * @return string
+     */
+    public function __toString()
+    {
+        return $this->getTitle();
+    }
+
 }
