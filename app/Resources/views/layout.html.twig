@@ -1,0 +1,8 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+<div id="pojemnik">
+    <h1 id="logo"><a href="{{ path('homepage') }}">Piosenki wojskowe</a></h1>
+    {% block content %}{% endblock %}
+</div>
+{% endblock %}

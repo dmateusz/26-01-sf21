@@ -1,0 +1,66 @@
+body {
+    background: #f4f4f4;
+    font-family: Georgia, serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    line-height: 200%;
+}
+#pojemnik {
+    width: 900px;
+    margin: 0 auto;
+    background: #f4f4f4 url('../images/gora.jpg') top center no-repeat;
+
+}
+#logo {
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 250px;
+    background: url('../images/logo.jpg') no-repeat;
+    text-indent: -2000em;
+}
+
+#logo a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 250px;
+}
+
+#logo a:hover {
+    background: url('../images/logo-on.jpg') no-repeat;
+}
+
+#stopka {
+    margin: 0;
+    padding: 0;
+    width: 900px;
+    height: 370px;
+    background: url('../images/stopka.jpg') no-repeat;
+}
+
+#tresc {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#menu {
+    font-variant: small-caps;
+    width: 40%;
+    margin: 0 auto;
+
+    margin-top: 50px;
+    
+}
+
+#menu a {
+    color: black;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}

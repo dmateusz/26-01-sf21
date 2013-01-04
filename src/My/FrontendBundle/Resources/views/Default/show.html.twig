@@ -1,20 +1,17 @@
-<!DOCTYPE HTML>
-<html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <title>ala</title>
-</head>
-<body>
+{% extends "::layout.html.twig" %}
 
+{% block html_title %}
+    {{ entity }}
+{% endblock %}
+
+{% block content %}
 <div id="tresc">
-    <h2>{{ entity }}</h2>
-    <p>
-        {{ entity.contents|nl2br }}
-    </p>
+<h2>{{ entity }}</h2>
+<p>
+    {{ entity.contents|nl2br }}
+</p>
 
-    <p><a href="{{ path('homepage') }}">powrót</a>
+<p><a href="{{ path('homepage') }}">powrót</a>
 
 </div>
-
-</body>
-</html>
+{% endblock %}
